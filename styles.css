@@ -79,15 +79,17 @@ button:hover {
   text-align: center;
 }
 .about-top {
-   /* text-align: center; */
-  padding-top: 300px;
+   text-align: center;
+  padding-top: 100px;
   color: white;
   font-size: 30px;
 }
 .about-bottom {
-  text-align: center;
+  text-align: justify;
   font-size: 20px;
-  padding-top: 50px;
+  padding-top: px;
+  width: 500px;
+  color: #55819c;
   
 
 }
