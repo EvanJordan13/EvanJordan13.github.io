@@ -75,13 +75,19 @@ button {
 button:hover {
   background-color: #172e3e;
 }
-.about-top {
+#about {
   text-align: center;
+}
+.about-top {
+   /* text-align: center; */
   padding-top: 300px;
+  color: white;
+  font-size: 30px;
 }
 .about-bottom {
   text-align: center;
+  font-size: 20px;
   padding-top: 50px;
-  width: 500px;
-  left: 200%;
+  
+
 }
