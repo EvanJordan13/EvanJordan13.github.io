@@ -1,95 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Montserrat, sans-serif;
-  scroll-behavior: smooth;
+body::before{
+  display: block;
+  content: '';
+  height: 60px;
 }
-body {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("HeroImage.jpeg"); */
-  background-color: #183446;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-.banner {
-  width: 100%;
-  height: 100vh;
-}
-.navBar {
-  width: 85%;
-  margin: auto;
-  padding: 35px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.navBar ul li {
-  position: relative;
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px;
-}
-.navBar ul li a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-}
-.navBar ul li a::after {
-  content: "";
-  height: 3px;
-  width: 0;
-  background: #38aecc;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  transition: 0.5s;
-}
-.navBar ul li a:hover::after {
-  width: 100%;
-}
-.hero-text {
-  text-align: center;
-  font-size: 40px;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+.typeText::after {
+  content: "|";
+  animation: blink 1s infinite;
 }
 
-button {
-  /* background-color: #046E8F; */
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-  margin-top: 5rem;
-  padding: 0.9375rem 1.875rem;
-  font-size: 1.125rem;
-  font-weight: 200;
-  cursor: pointer;
-  border-radius: 200px;
-  outline: none !important;
-}
-button:hover {
-  background-color: #172e3e;
-}
-#about {
-  text-align: center;
-}
-.about-top {
-   text-align: center;
-  padding-top: 100px;
-  color: white;
-  font-size: 30px;
-}
-.about-bottom {
-  text-align: justify;
-  font-size: 20px;
-  padding-top: px;
-  width: 500px;
-  color: #55819c;
-  
 
+@keyframes blink {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
 }

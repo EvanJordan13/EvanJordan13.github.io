@@ -1,16 +1,32 @@
-window.onscroll = function() {myFunction()};
+var typeText = document.querySelector(".typeText");
+var toBeTyped = "Software Developer";
+var index = 0,
+  isAdding = true;
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+function startTyping() {
+  setTimeout(function () {
+    typeText.innerText = toBeTyped.slice(0, index);
+    if (isAdding) {
+      if (index > toBeTyped.length) {
+        isAdding = false;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
+        setTimeout(function () {
+          startTyping();
+        }, 3000);
+        return;
+      } else {
+        index++;
+      }
+    } else {
+      if (index === 0) {
+        isAdding = true;
+      } else {
+        index--;
+      }
+    }
+
+    startTyping();
+  }, 120);
 }
-function onLinkClick() {
-  document.getElementsByTagName('h2')[3].scrollIntoView();
-  // will scroll to 4th h3 element
-}
+
+startTyping();
