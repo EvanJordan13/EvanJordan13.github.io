@@ -1,2 +1,2 @@
 # Portfolio-Website
-Portfolio website built with html, css, and javascript and bootstrap.
+Portfolio website built with html, css, javascript, and bootstrap.
