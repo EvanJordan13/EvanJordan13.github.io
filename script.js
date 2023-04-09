@@ -1,5 +1,5 @@
 var typeText = document.querySelector(".typeText");
-var toBeTyped = "Software Developer";
+var toBeTyped = "Software\nDeveloper";
 var index = 0,
   isAdding = true;
 
