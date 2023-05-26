@@ -1,5 +1,12 @@
 
-
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.col {
+  width: 28.91px;
+  height: 28.91px;
+}
 body::before{
   display: block;
   content: '';
