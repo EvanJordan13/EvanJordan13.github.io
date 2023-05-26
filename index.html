@@ -19,8 +19,10 @@
     />
 
     <title>Evan Jordan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"
   </head>
   <body>
+    
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
       <div class="container">
@@ -54,17 +56,17 @@
     <!-- Hero -->
 
     <section class="bg-dark text-light p-5 text-center text-sm-start">
-      <div class="container">
+      <div class="container" >
         <div class="d-sm-flex align-items-center justify-content-between">
           <div>
-            <div style="height: 96px; width: 636px">
-              <h1>Evan Jordan <span class="text-info typeText"></span></h1>
+            <div style="height: 96px; width: 636px; text-align: left;">
+              <h1 class="text-right">Evan Jordan <span class="text-info typeText"></span></h1>
             </div>
-            <p class="lead my-50">
+            <p class="lead my-50 ">
               Hello! My name is Evan Jordan. I am computer science major at the
               University of Illinois Urbana-Champaign with a passion for making
-              <span class="text-info">effective, efficient, and elegant </span>
-              software solutions to solve problems and innovate.
+              <span class="text-info">efficient, effective, and elegant </span>
+              software to solve problems and innovate.
             </p>
             <a href="#about" class="btn btn-secondary btn-lg">More About Me</a>
             <!-- <button class="btn btn-primary btn-lg">More About Me</button> -->
@@ -78,8 +80,8 @@
       </div>
     </section>
 
-    <!--  -->
-    <section id="about" class="p-5 bg-dark text-light">
+    <!-- Experience Section -->
+    <section id="about" class=" bg-dark text-light" style="padding-left: 3rem; padding-right: 3rem; padding-bottom: 3rem; padding-top: calc(128px + 8vw);">
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-md">
@@ -93,7 +95,7 @@
               Through clubs and numerous side projects, I have practical
               experience in today's leading technologies including
               <span class="text-info"
-                >Java, C++, Swift, HTML & CSS, Javascript, React, Bootstrap and
+                >Java, Swift, HTML & CSS, Javascript, React, Bootstrap and
                 Node.js
               </span>
             </p>
@@ -117,10 +119,11 @@
                 <div class="h1 mb-3">
                   <i class="bi bi-robot"></i>
                 </div>
-                <h3 class="card-title mb-3">Robot Scout</h3>
+                <h3 class="card-title mb-3">CyborgScout</h3>
                 <p class="card-text">
                   This iOS application tracks scouting data on FRC robots at
-                  competitions and aids in selecting the most optimal alliance.
+                  competitions and aids in selecting the most optimal 3 robot
+                  alliance.
                 </p>
                 <a
                   href="https://github.com/EvanJordan13/FRC-Scouting"
@@ -153,9 +156,14 @@
                 </div>
                 <h3 class="card-title mb-3">Robot Code</h3>
                 <p class="card-text">
-                  Java code for FRC robot with advanced vision recognition, autonomous and human operation, and advanced holonomic drivetrain control. 
+                  Java code for FRC robot with advanced vision recognition,
+                  autonomous and human operation, and advanced holonomic
+                  drivetrain control.
                 </p>
-                <a href="https://github.com/Team4256/4256-23-Volta" id="experience" class="btn btn-primary"
+                <a
+                  href="https://github.com/Team4256/4256-23-Volta"
+                  id="experience"
+                  class="btn btn-primary"
                   >Visit Github</a
                 >
               </div>
@@ -188,23 +196,18 @@
               data-bs-parent="#experience"
             >
               <div class="accordion-body text-dark">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Officia eaque, perspiciatis voluptate vero nihil earum at
-                maxime! Expedita, adipisci. Dolore unde non ad totam rem,
-                repellendus consequatur aperiam, sed adipisci eaque quos vel
-                exercitationem nostrum, voluptatum quis sunt voluptate ut quas!
-                Ab maxime veniam vitae tempora cupiditate expedita possimus
-                nemo!
-                <div class="progress">
-                  <div
-                    class="progress-bar progress-bar-striped progress-bar-animated"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 95%"
-                  ></div>
-                </div>
+                Extensive experience with advanced object oriented programming
+                principles in Java mostly from the development of software on an
+                FRC robot. Through collaboration on a team of two other
+                developers, we were able to produce robots that were capable of
+                machine learning powered vision recognition and targeting,
+                interfacing with and controlling physical robot components, and
+                creating fully autonomous and human controlled actions and
+                routines. Additionally built a
+                <a href="https://github.com/EvanJordan13/Soundboard"
+                  >desktop application soundboard
+                </a>
+                with JavaFX that allows users to upload custom soundfiles.
               </div>
             </div>
           </div>
@@ -217,7 +220,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#experience-two"
               >
-                C++
+                Swift
               </button>
             </h2>
             <div
@@ -226,23 +229,14 @@
               data-bs-parent="#experience"
             >
               <div class="accordion-body text-dark">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Officia eaque, perspiciatis voluptate vero nihil earum at
-                maxime! Expedita, adipisci. Dolore unde non ad totam rem,
-                repellendus consequatur aperiam, sed adipisci eaque quos vel
-                exercitationem nostrum, voluptatum quis sunt voluptate ut quas!
-                Ab maxime veniam vitae tempora cupiditate expedita possimus
-                nemo!
-                <div class="progress">
-                  <div
-                    class="progress-bar progress-bar-striped progress-bar-animated"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 80%"
-                  ></div>
-                </div>
+                Extensive experience developing and maintaining a production iOS
+                application, CyborgScout, that is used to gather and analyze
+                data on other robots during competitions and determine what
+                other robots would complement your capabilites and would form an
+                alliance with the best chance of success. The data gethering
+                interface is also customizable to the user and includes API
+                calls to third party databases containg additional robot data.
+                User data is stored using Google FireStore.
               </div>
             </div>
           </div>
@@ -264,23 +258,11 @@
               data-bs-parent="#experience"
             >
               <div class="accordion-body text-dark">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Officia eaque, perspiciatis voluptate vero nihil earum at
-                maxime! Expedita, adipisci. Dolore unde non ad totam rem,
-                repellendus consequatur aperiam, sed adipisci eaque quos vel
-                exercitationem nostrum, voluptatum quis sunt voluptate ut quas!
-                Ab maxime veniam vitae tempora cupiditate expedita possimus
-                nemo!
-                <div class="progress">
-                  <div
-                    class="progress-bar progress-bar-striped progress-bar-animated"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 95%"
-                  ></div>
-                </div>
+                Extensive experience designing and building responsive websites
+                using vanilla HTML/CSS and using Bootstrap. Experience building
+                and maintaining two production websites: Budget Buddy, a
+                personal finannce website, and this portfolio website built
+                with Bootstrap.
               </div>
             </div>
           </div>
@@ -302,24 +284,32 @@
               data-bs-parent="#experience"
             >
               <div class="accordion-body text-dark">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Officia eaque, perspiciatis voluptate vero nihil earum at
-                maxime! Expedita, adipisci. Dolore unde non ad totam rem,
-                repellendus consequatur aperiam, sed adipisci eaque quos vel
-                exercitationem nostrum, voluptatum quis sunt voluptate ut quas!
-                Ab maxime veniam vitae tempora cupiditate expedita possimus
-                nemo!
-                <div class="progress">
-                  <div
-                    class="progress-bar progress-bar-striped progress-bar-animated"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 70%"
-                  ></div>
-                </div>
+                Extensive experience in building and maintaining production
+                websites using both vanilla Javascript and React. In building
+                Budget Buddy, React was used to build an interactive user
+                interface that provides users with an interesting and intuitive
+                experience.
               </div>
+            </div>
+          </div>
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#experience-five"
+              >
+                Node.js
+              </button>
+            </h2>
+            <div
+              id="experience-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#experience"
+            >
+              <div class="accordion-body text-dark"></div>
             </div>
           </div>
         </div>
@@ -335,7 +325,8 @@
             <h2 class="text-center mb-4">Contact Info</h2>
             <ul class="list-group list-group-flush lead">
               <li class="list-group-item">
-                <span class="fw-bold">Personal Email:</span> ejordan1305@gmail.com
+                <span class="fw-bold">Personal Email:</span>
+                ejordan1305@gmail.com
               </li>
               <li class="list-group-item">
                 <span class="fw-bold">School Email:</span> evanj3@illinois.edu
